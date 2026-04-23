@@ -1,48 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Org Chart Builder</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-      color: #1e293b;
-    }
-    h1, h2 {
-      color: #0f172a;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Org Chart Builder </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background: #f8fafc;
+            --foreground: #0f172a;
+            --muted: #64748b;
+            --primary: #0ea5e9;
+            --primary-foreground: #ffffff;
+            --card: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background: #020617;
+                --foreground: #f1f5f9;
+                --muted: #94a3b8;
+                --primary: #0ea5e9;
+                --card: #0f172a;
+                --border: #1e293b;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--background);
+            color: var(--foreground);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        .header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 1.25rem;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .contact-box {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .email-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--primary-foreground);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .email-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p>Last updated: 2026</p>
+    <div class="container">
+        <header class="header">
+            <h1>Privacy Policy</h1>
+            <p>Last updated: April 23, 2026</p>
+        </header>
 
-<h2>1. Information We Collect</h2>
-<p>Org Chart Builder does not collect personal data. Your charts are stored securely in your device or cloud storage.</p>
+        <main class="card">
+            <section>
+                <h2>1. Information We Collect</h2>
+                <p>Org Chart Pro is designed to prioritize your privacy. We collect minimal information necessary to provide our services:</p>
+                <ul>
+                    <li><strong>Usage Data:</strong> We may collect anonymous data about how the app is used (e.g., session duration, feature usage) to improve performance.</li>
+                    <li><strong>Account Information:</strong> If you choose to sign in, we store your name and email to sync your charts across devices.</li>
+                    <li><strong>Purchase Data:</strong> We track subscription status and purchase tokens to ensure your premium benefits are active.</li>
+                </ul>
+            </section>
 
-<h2>2. How We Use Data</h2>
-<p>We use data only to provide core functionality such as creating, saving, and exporting charts.</p>
+            <section>
+                <h2>2. In-App Purchases & Subscriptions</h2>
+                <p>Our application offers premium features via in-app purchases and subscriptions:</p>
+                <ul>
+                    <li>Transactions are processed securely through the <strong>Google Play Store</strong>.</li>
+                    <li>We do not store your credit card or payment information on our servers.</li>
+                    <li>Subscription status is verified using secure receipts provided by the app store.</li>
+                </ul>
+            </section>
 
-<h2>3. Data Storage</h2>
-<p>Your data may be stored locally or in cloud services depending on features you use.</p>
+            <section>
+                <h2>3. Data Storage & Security</h2>
+                <p>Your charts are your property. Depending on how you use the app, your data is stored:</p>
+                <ul>
+                    <li><strong>Locally:</strong> On your device for quick access.</li>
+                    <li><strong>Cloud:</strong> On our secure database (powered by Convex) if you are signed in, allowing you to access charts on any device.</li>
+                </ul>
+                <p>We implement industry-standard security measures to protect your information from unauthorized access.</p>
+            </section>
 
-<h2>4. Third-Party Services</h2>
-<p>We may use third-party tools like analytics or cloud storage providers.</p>
+            <section>
+                <h2>4. Third-Party Services</h2>
+                <p>We use trusted third-party providers for specific functionalities:</p>
+                <ul>
+                    <li>Google Play Services (Payments & Ad Management)</li>
+                    <li>Convex (Cloud Database & Backend)</li>
+                    <li>Analytics providers (Anonymous performance tracking)</li>
+                </ul>
+            </section>
 
-<h2>5. Security</h2>
-<p>We take reasonable steps to protect your data.</p>
+            <section>
+                <h2>5. Your Rights</h2>
+                <p>You have the right to access, update, or delete your data at any time. You can choose to use the app anonymously as a guest, which will keep your data stored only on your physical device.</p>
+            </section>
 
-<h2>6. Changes</h2>
-<p>We may update this policy anytime. Please check this page regularly.</p>
+            <div class="contact-box">
+                <h2>6. Contact Us</h2>
+                <p>If you have any questions or concerns regarding this Privacy Policy, feel free to reach out to our team.</p>
+                <a href="mailto:bugblitz.dev@gmail.com" class="email-btn">bugblitz.dev@gmail.com</a>
+            </div>
+        </main>
 
-<h2>7. Contact</h2>
-<p>If you have any questions, contact us at: bugblitz.dev@gmail.com</p>
+        <footer>
+            &copy; 2026 Org Chart Builder All rights reserved.
+        </footer>
+    </div>
 
 </body>
 </html>
