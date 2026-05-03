@@ -1,9 +1,12 @@
+Here is the complete, updated HTML for your **Privacy Policy**. I have integrated the **7-day data retention policy** and updated the date.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Org Chart Builder </title>
+    <title>Privacy Policy | Org Chart Builder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -16,6 +19,7 @@
             --primary-foreground: #ffffff;
             --card: #ffffff;
             --border: #e2e8f0;
+            --warning: #f59e0b;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -124,6 +128,15 @@
             font-weight: bold;
         }
 
+        .retention-note {
+            background-color: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--warning);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
         .contact-box {
             margin-top: 3rem;
             padding-top: 2rem;
@@ -173,13 +186,13 @@
     <div class="container">
         <header class="header">
             <h1>Privacy Policy</h1>
-            <p>Last updated: April 23, 2026</p>
+            <p>Last updated: May 03, 2026</p>
         </header>
 
         <main class="card">
             <section>
                 <h2>1. Information We Collect</h2>
-                <p>Org Chart Pro is designed to prioritize your privacy. We collect minimal information necessary to provide our services:</p>
+                <p>Org Chart Builder is designed to prioritize your privacy. We collect minimal information necessary to provide our services:</p>
                 <ul>
                     <li><strong>Usage Data:</strong> We may collect anonymous data about how the app is used (e.g., session duration, feature usage) to improve performance.</li>
                     <li><strong>Account Information:</strong> If you choose to sign in, we store your name and email to sync your charts across devices.</li>
@@ -198,11 +211,17 @@
             </section>
 
             <section>
-                <h2>3. Data Storage & Security</h2>
-                <p>Your charts are your property. Depending on how you use the app, your data is stored:</p>
+                <h2>3. Data Storage & Retention</h2>
+                <p>Your charts are stored securely to ensure you can access them when needed. Our storage policy depends on your subscription status:</p>
+                
+                <div class="retention-note">
+                    <strong>Important for Free Users:</strong> Data for free accounts is stored for 7 days. After 7 days of inactivity, charts are automatically deleted from our cloud servers.
+                </div>
+
                 <ul>
-                    <li><strong>Locally:</strong> On your device for quick access.</li>
-                    <li><strong>Cloud:</strong> On our secure database (powered by Convex) if you are signed in, allowing you to access charts on any device.</li>
+                    <li><strong>Free Users:</strong> Charts are kept for 7 days after your last activity. Accessing or saving a chart resets this timer.</li>
+                    <li><strong>Premium Users:</strong> Subscribers enjoy permanent cloud storage. Your data will not be subject to automatic deletion while your subscription is active.</li>
+                    <li><strong>Local Storage:</strong> A copy of your data may be stored locally on your device for offline access.</li>
                 </ul>
                 <p>We implement industry-standard security measures to protect your information from unauthorized access.</p>
             </section>
@@ -219,7 +238,7 @@
 
             <section>
                 <h2>5. Your Rights</h2>
-                <p>You have the right to access, update, or delete your data at any time. You can choose to use the app anonymously as a guest, which will keep your data stored only on your physical device.</p>
+                <p>You have the right to access, update, or delete your data at any time. You can choose to use the app anonymously as a guest, which will keep your data stored only on your physical device and subject to our 7-day retention policy if synced to the cloud.</p>
             </section>
 
             <div class="contact-box">
@@ -236,3 +255,4 @@
 
 </body>
 </html>
+```
